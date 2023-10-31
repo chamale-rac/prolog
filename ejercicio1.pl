@@ -1,7 +1,9 @@
 progenitor(francisco, cony).
 progenitor(francisco, marvin).
+progenitor(francisco, blanca).
 progenitor(maria, cony).
 progenitor(maria, marvin).
+progenitor(maria, blanca).
 
 progenitor(oscar, samuel).
 progenitor(oscar, andrea).
@@ -10,14 +12,14 @@ progenitor(cony, samuel).
 progenitor(cony, andrea).
 
 hombre(francisco).
-mujer(maria).
-
 hombre(marvin).
 hombre(oscar).
 hombre(samuel).
 
 mujer(cony).
+mujer(maria).
 mujer(andrea).
+mujer(blanca).
 
 % rel - padres
 padre(X, Y) :- progenitor(X, Y), hombre(X).
